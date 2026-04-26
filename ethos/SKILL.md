@@ -14,6 +14,7 @@ When this skill is active, constrain work to the following:
 5. Let parsing/typing drive safety before adding explicit defensive checks.
 6. Minimize files and surface area; choose the smallest change set that preserves behavior.
 7. Treat refactors as opportunities to reduce branches, not add pathways.
+8. Avoid “negative space comments” that document alternatives, excuses, or planning conversation; comments should only explain what’s surprising, non-obvious, or externally important.
 
 ## Working rules
 
@@ -22,6 +23,7 @@ When this skill is active, constrain work to the following:
 - Remove duplicated/overlapping logic before adding generic helpers.
 - For reviews, call out complexity that can be deleted, not complexity that is “acceptable for now.”
 - For fixes, prefer explicit correctness over future-proofing.
+- Do not write comments that describe the path not taken, prior debate, or historical intent. Only document behavior, invariants, edge conditions, and tradeoffs a cold reader would need to understand without seeing prior context.
 
 ## Output style
 
