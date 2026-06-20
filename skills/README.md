@@ -2,13 +2,15 @@
 
 My personal, opinionated skill library.
 
-## Ethos
-
-The repo-level philosophy lives in [ETHOS.md](./ETHOS.md).
-
 ## Core
 
 Core skills are broadly reusable ways of working. They are not tied to a specific repository convention, version-control system, ticket tracker, or collaboration style.
+
+Keep skills small enough that several can be invoked together. Prefer concise behavioral guidance over prescribed artifacts, reports, or orchestration.
+
+A core skill may reference another skill only when that reference is necessary to explain the current skill's behavior. Do not maintain a full composition map inside each skill.
+
+Workflow order, handoffs, parallelism, report generation, and project-specific conventions should be added only when a skill is explicitly about those things.
 
 | Skill | Description |
 | ----- | ----------- |
